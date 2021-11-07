@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="vue-script.js" defer></script>
+    <title>Learning Vue</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>{{title}}</h1>
+      <p>{{message}}</p>
+
+      <h2>What to learn:</h2>
+      <ul>
+        <todo-item
+          v-for="todo in todos"
+          v-bind:todo="todo"
+          v-bind:key="todo.id">
+      </ul>
+      </todo-item>
+    </div>
+  </body>
+</html>
